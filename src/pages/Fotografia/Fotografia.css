@@ -1,0 +1,106 @@
+.fotografia {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.fotografia > h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fotografia-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  animation: galleryFade 1s ease;
+}
+
+@keyframes galleryFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fotografia-photo {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e8e8e8;
+  border-radius: 12px;
+}
+
+.fotografia-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  width: fit-content;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+
+.category-image {
+  width: 236px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e8e8e8;
+  border: 1px solid #777;
+  border-radius: 10px;
+
+  font-size: 12px;
+}
+
+.category-button span {
+  font-size: 20px;
+}
+
+.fotografia-contact-button {
+  display: inline-block;
+
+  margin-top: 30px;
+  padding: 10px 28px;
+
+  background-color: #e0e0e0;
+  border-radius: 2px;
+
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.category-button {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.category-button:hover,
+.category-button.active {
+  opacity: 1;
+}
+
+.category-button.active span {
+  font-weight: 600;
+}
