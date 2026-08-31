@@ -1,0 +1,68 @@
+.trafego-pago {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.trafego-pago > h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.trafego-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 5px solid #999;
+  width: 100%;
+  min-height: 380px;
+padding: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.trafego-grafico,
+.trafego-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trafego-grafico {
+  background-color: #e8e8e8;
+}
+
+.trafego-imagem {
+  background-color: #d8d8d8;
+}
+
+.trafego-texto {
+  margin-top: 40px;
+}
+
+.trafego-texto p {
+  max-width: 800px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.trafego-contato {
+  display: block;
+
+  width: fit-content;
+  margin: 35px auto 0;
+  padding: 10px 28px;
+
+  background-color: #e0e0e0;
+  border-radius: 4px;
+
+  font-size: 14px;
+
+  transition: opacity 0.2s ease;
+}
+
+.trafego-contato:hover {
+  opacity: 0.7;
+}
