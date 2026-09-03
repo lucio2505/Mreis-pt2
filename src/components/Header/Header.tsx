@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
+import logo from '../../assets/logo/logo-dourada.png'
 
 function Header() {
   return (
     <header>
-      <h1 className="header-logo-placeholder">MREIS</h1>
+      <img src={logo} alt="Logo MREIS" className="header-logo" />
 
       <nav>
         <Link to="/">Início</Link>

@@ -3,8 +3,6 @@ import { useState } from 'react'
 
 function Contato() {
   const [nome, setNome] = useState('')
-  const [email, setEmail] = useState('')
-  const [telefone, setTelefone] = useState('')
   const [servico, setServico] = useState('')
   const [descricao, setDescricao] = useState('')
 
@@ -15,8 +13,6 @@ function Contato() {
     Novo contato pelo site MREIS
 
     Nome: ${nome}
-    Telefone: ${telefone}
-    E-mail: ${email}
     Serviço: ${servico}
     Descrição: ${descricao}
   `
@@ -52,27 +48,6 @@ function Contato() {
           </label>
 
           <label>
-            E-mail
-            <input
-              type="email"
-              placeholder="Digite seu e-mail"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              required
-            />
-          </label>
-
-          <label>
-            Telefone
-            <input
-              type="tel"
-              placeholder="Digite seu telefone"
-              value={telefone}
-              onChange={(event) => setTelefone(event.target.value)}
-            />
-          </label>
-
-          <label>
                 Serviço
                 <select
                   value={servico}
@@ -102,10 +77,6 @@ function Contato() {
           <div className="contato-actions">
             <button type="submit">
               Enviar
-            </button>
-
-            <button type="button">
-              WhatsApp
             </button>
           </div>
         </form>

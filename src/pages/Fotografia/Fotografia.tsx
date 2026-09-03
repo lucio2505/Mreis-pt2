@@ -13,15 +13,7 @@ function Fotografia() {
   return (
     <main className="fotografia">
       <h1>Fotografia</h1>
-
-      <div className="fotografia-gallery" key={category}>
-        {photos.map((photo) => (
-          <div className="fotografia-photo" key={photo}>
-            {photo}
-          </div>
-        ))}
-      </div>
-
+           
       <div className="fotografia-categories">
         <button
           className={`category-button ${category === 'ensaio' ? 'active' : ''}`}
@@ -55,6 +47,22 @@ function Fotografia() {
           <span>Gastronômico</span>
         </button>
       </div>
+
+      <div className="fotografia-gallery" key={category}>
+        {photos.map((photo) => (
+          <div className="fotografia-photo" key={photo.alt}>
+              {photo.src ? (
+                <img src={photo.src} alt={photo.alt} />
+              ) : (
+                <div>
+              {photo.alt}
+                </div>
+              )}
+          </div>
+        ))}
+      </div>
+
+      
 
       <Link className="fotografia-contact-button" to="/contato">
         Entre em contato!
