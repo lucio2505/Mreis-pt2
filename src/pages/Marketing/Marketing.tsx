@@ -9,28 +9,33 @@ function Marketing() {
 
       <section className="marketing-intro">
         <p>
-          Texto sobre os serviços de marketing será inserido aqui.
+          O marketing ajuda sua empresa a se posicionar melhor, alcançar as pessoas certas e transformar presença em resultado. Com estratégias bem definidas, sua marca ganha mais visibilidade, fortalece sua identidade e cria conexões reais com o público. Veja alguns exemplos:
         </p>
       </section>
 
       <section className="marketing-projects">
         <MarketingProject
+          imgAntes=""
+          imgDepois=""
           name="Projeto 1"
-          url="https://instagram.com/"
+  
         />
 
         <MarketingProject
+         imgAntes=""
+          imgDepois=""
           name="Projeto 2"
-          url="https://instagram.com/"
+    
         />
 
         <MarketingProject
+         imgAntes=""
+          imgDepois=""
           name="Projeto 3"
-          url="https://instagram.com/"
         />
       </section>
 
-      <Link className="marketing-contact-button" to="/contato">
+      <Link className="contact-button" to="/contato">
         Entre em contato!
       </Link>
     </main>

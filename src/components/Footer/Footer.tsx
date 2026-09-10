@@ -10,6 +10,10 @@ function Footer() {
           <img src={logo} alt="Logo MREIS" className="footer-logo" />
         </div>
 
+      <div>
+        <span className="footer-email">Email: fotografiareism@gmail.com</span>  
+      </div>  
+
         <div className="footer-social">
              <a href="https://www.instagram.com/mreis.fotografia/"  target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram className="footer-social-icon" />

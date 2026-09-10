@@ -1,24 +1,26 @@
 .marketing-project {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 24px;
+}
 
-  width: fit-content;
+.imgAnteseDepois
+{
+  display: flex;
+  gap: 10px;
 }
 
 .marketing-project-image {
-  width: 236px;
-  height: 90px;
+  width: 185px;
+  height: 360px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: #e8e8e8;
   border: 1px solid #777;
   border-radius: 10px;
-
-  overflow: hidden;
 }
 
 .marketing-project span {
@@ -26,5 +28,5 @@
 }
 
 .marketing-project:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }

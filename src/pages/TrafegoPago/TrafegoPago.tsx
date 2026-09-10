@@ -6,23 +6,18 @@ function TrafegoPago() {
     <main className="trafego-pago">
       <h1>Tráfego Pago</h1>
 
-      <section className="trafego-banner">
         <div className="trafego-grafico">
           Gráfico
         </div>
 
-        <div className="trafego-imagem">
-          Imagem
-        </div>
-      </section>
 
       <section className="trafego-texto">
         <p>
-          Texto explicativo sobre os serviços de tráfego pago será inserido aqui.
+          O tráfego pago ajuda sua empresa a alcançar mais pessoas de forma estratégica e rápida. Por meio de anúncios direcionados, é possível atrair o público certo, gerar mais oportunidades e transformar investimento em resultados mensuráveis.
         </p>
       </section>
 
-      <Link className="trafego-contato" to="/contato">
+      <Link className="contact-button" to="/contato">
         Entre em contato!
       </Link>
     </main>

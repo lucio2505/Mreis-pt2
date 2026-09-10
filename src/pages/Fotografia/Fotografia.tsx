@@ -77,7 +77,7 @@ function Fotografia() {
 
       
 
-      <Link className="fotografia-contact-button" to="/contato">
+      <Link className="contact-button" to="/contato">
         Entre em contato!
       </Link>
     </main>
