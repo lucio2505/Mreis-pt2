@@ -8,9 +8,9 @@ function Header() {
 
 useEffect(() => {
   function handleScroll() {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 200) {
       setScrolled(true)
-    }if (window.scrollY < 200) {
+    }if (window.scrollY < 20) {
       setScrolled(false)
     }
   }

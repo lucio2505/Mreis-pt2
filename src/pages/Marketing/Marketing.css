@@ -2,6 +2,7 @@
   width: min(1200px, calc(100% - 40px));
   margin: 0 auto;
   padding: 60px 0;
+  flex-wrap: wrap;
 }
 
 .marketing > h1 {
@@ -12,13 +13,10 @@
 .marketing-intro {
   width: 100%;
   min-height: 280px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 40px;
-
   border: 1px solid #999;
   border-radius: 10px;
 }
@@ -47,3 +45,5 @@
   font-size: 14px;
   text-decoration: none;
 }
+
+

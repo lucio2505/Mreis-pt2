@@ -1,10 +1,10 @@
 import './Home.css'
 import ServiceCard from '../../components/ServiceCard/ServiceCard'
 import Gallery from '../../components/Gallery/Gallery'
-import banner from '../../assets/home/banner.jpg'
-import btnMarketing from '../../assets/home/servicos/btnMarketing.avif'
-import btnTrafegopago from '../../assets/home/servicos/btnTrafegopago.png'
-import btnFotografia from '../../assets/home/servicos/btnFotografia.png'
+import banner from '../../assets/home-web/banner.webp'
+import btnMarketing from '../../assets/home-web/servicos/btnMarketing.avif'
+import btnTrafegopago from '../../assets/home-web/servicos/btnTrafegopago.webp'
+import btnFotografia from '../../assets/home-web/servicos/btnFotografia.webp'
 
 
 function Home() {

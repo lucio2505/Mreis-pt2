@@ -76,3 +76,30 @@
   font-size: 30px;
   text-align: center;
 }
+
+@media (max-width: 761px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 0;
+  }
+
+  .home-hero-image {
+    height: 320px;
+  }
+
+  .home-services {
+    padding: 40px 0;
+    width: 55%;
+  }
+
+  .home-services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+  }
+
+  .home-gallery {
+    padding: 40px 0 60px;
+  }
+}

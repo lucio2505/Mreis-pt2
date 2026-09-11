@@ -119,3 +119,19 @@
 .category-button.active span {
   font-weight: 600;
 }
+
+@media (max-width: 761px) {
+  .fotografia-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 515px) {
+  .fotografia-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1{
+    font-size: 30px;
+  }
+}

@@ -14,7 +14,7 @@
 .marketing-project-image {
   width: 185px;
   height: 360px;
-
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;

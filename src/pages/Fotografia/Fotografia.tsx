@@ -2,10 +2,10 @@ import { useState } from 'react'
 import { photographyData } from '../../data/photographyData'
 import { Link } from 'react-router-dom'
 import './Fotografia.css'
-import btnAniversario from '../../assets/fotografia/btnAniversario.jpg'
-import btnEnsaio from '../../assets/fotografia/btnEnsaio.jpg'
-import btnGastronomico from '../../assets/fotografia/btnGastronomico.jpg'
-import btnModa from '../../assets/fotografia/btnModa.jpg'
+import btnAniversario from '../../assets/fotografia-web/btnAniversario.webp'
+import btnEnsaio from '../../assets/fotografia-web/btnEnsaio.webp'
+import btnGastronomico from '../../assets/fotografia-web/btnGastronomico.webp'
+import btnModa from '../../assets/fotografia-web/btnModa.webp'
 
 
 type Category = keyof typeof photographyData
@@ -65,7 +65,7 @@ function Fotografia() {
         {photos.map((photo) => (
           <div className="fotografia-photo" key={photo.alt}>
               {photo.src ? (
-                <img src={photo.src} alt={photo.alt} />
+                <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
               ) : (
                 <div>
               {photo.alt}
