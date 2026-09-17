@@ -25,7 +25,7 @@ header {
 }
 
 .header-logo {
-  width: 180px;
+  width: 150px;
   height: auto;
 
   transition: width 0.3s ease;
@@ -57,4 +57,69 @@ header nav a:hover {
 
 .scrolled .header-logo {
   width: 80px;
+}
+
+@media (max-width: 507px) {
+    header nav a {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 488px) {
+    header nav a {
+      font-size: 14px;
+    }
+    header nav {
+     gap: 18px;
+    }
+
+    .header-logo {
+  width: 135px;
+    }
+}
+
+@media (max-width: 443px) {
+    header nav a {
+      font-size: 12px;
+    }
+    .header-logo {
+  width: 135px;
+    }
+
+    header nav {
+     gap: 18px;
+    }
+}
+
+
+@media (max-width: 401px) {
+    .header-logo {
+  width: 100px;
+    }
+
+     header nav a {
+      font-size: 11px;
+    }
+}
+
+
+
+
+@media (max-width: 600px){
+  .scrolled nav a{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 579px){
+  .scrolled .header-content{
+    flex-direction: column;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 443px) {
+   .scrolled nav a{
+    font-size: 11px;
+  }
 }

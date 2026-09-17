@@ -21,6 +21,7 @@
   background-color: #e8e8e8;
   border: 1px solid #777;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 .marketing-project span {
@@ -29,4 +30,11 @@
 
 .marketing-project:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 403px){
+ 
+    .imgAnteseDepois {
+      flex-direction: column;
+    }
 }

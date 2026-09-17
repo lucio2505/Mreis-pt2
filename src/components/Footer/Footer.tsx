@@ -6,23 +6,21 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-brand">
           <img src={logo} alt="Logo MREIS" className="footer-logo" />
-        </div>
 
-      <div>
-        <span className="footer-email">Email: fotografiareism@gmail.com</span>  
-      </div>  
+  
+          <span className="footer-email">Email: fotografiareism@gmail.com</span>   
 
-        <div className="footer-social">
-             <a href="https://www.instagram.com/mreis.fotografia/"  target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <FaInstagram className="footer-social-icon" />
-             </a>
+            <div className="footer-social">
+                <a href="https://www.instagram.com/mreis.fotografia/"  target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <FaInstagram className="footer-social-icon" />
+                </a>
+              
+
+              <a href="https://wa.me/5511969548619" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <FaWhatsapp className="footer-social-icon" />
+              </a>
           </div>
-
-          <a href="https://wa.me/5511969548619" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <FaWhatsapp className="footer-social-icon" />
-          </a>
        </div>
 
       <div className="footer-bottom">

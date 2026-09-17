@@ -46,3 +46,17 @@
 .trafego-contato:hover {
   opacity: 0.7;
 }
+
+@media (max-width: 1000px) {
+  .contact-button {
+    display: flex;
+    width: 169px;
+    
+  }
+}
+
+@media (max-width: 973px) {
+  .contact-button{
+    
+  }
+}
