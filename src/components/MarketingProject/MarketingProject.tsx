@@ -1,5 +1,6 @@
 import './MarketingProject.css'
 
+
 type MarketingProjectProps = {
   name: string
   imgAntes: string
@@ -13,15 +14,33 @@ function MarketingProject({ name, imgAntes, imgDepois }: MarketingProjectProps) 
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="imgAnteseDepois">
-        <div className="marketing-project-image">
-          <span>Antes</span>
-        </div>
-        <div className="marketing-project-image">
-          <span>Depois</span>
-        </div>
-      </div>
       <span>{name}</span>
+        <div className="imgAnteseDepois">
+
+  <div className="marketing-project-item">
+    <div className="marketing-project-image">
+          <img
+            src={imgAntes}
+            alt={`${name} antes do trabalho de marketing`}
+          />
+        </div>
+
+        <span>Antes</span>
+      </div>
+
+      <div className="marketing-project-item">
+        <div className="marketing-project-image">
+          <img
+            src={imgDepois}
+            alt={`${name} depois do trabalho de marketing`}
+          />
+        </div>
+
+        <span>Depois</span>
+      </div>
+
+</div>
+      
     </a>
   )
 }

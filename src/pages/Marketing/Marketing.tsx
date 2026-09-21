@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 import MarketingProject from '../../components/MarketingProject/MarketingProject'
 import './Marketing.css'
+import antes1 from '../../assets/marketing/antes1.png'
+import depois1 from '../../assets/marketing/depois1.png'
+import antes2 from '../../assets/marketing/antes2.png'
+import depois2 from '../../assets/marketing/depois2.png'
 
 function Marketing() {
   return (
@@ -15,23 +19,17 @@ function Marketing() {
 
       <section className="marketing-projects">
         <MarketingProject
-          imgAntes=""
-          imgDepois=""
-          name="Projeto 1"
+          imgAntes={antes1}
+          imgDepois={depois1}
+          name="Isabele Fit"
   
         />
 
         <MarketingProject
-         imgAntes=""
-          imgDepois=""
-          name="Projeto 2"
+         imgAntes={antes2}
+          imgDepois={depois2}
+          name="Rose Guloseimas"
     
-        />
-
-        <MarketingProject
-         imgAntes=""
-          imgDepois=""
-          name="Projeto 3"
         />
       </section>
 

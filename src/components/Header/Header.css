@@ -89,6 +89,10 @@ header nav a:hover {
     header nav {
      gap: 18px;
     }
+
+     .scrolled nav a{
+    font-size: 11px;
+  }
 }
 
 
@@ -115,11 +119,5 @@ header nav a:hover {
   .scrolled .header-content{
     flex-direction: column;
     padding-top: 0px;
-  }
-}
-
-@media (max-width: 443px) {
-   .scrolled nav a{
-    font-size: 11px;
   }
 }

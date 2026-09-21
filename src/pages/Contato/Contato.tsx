@@ -12,9 +12,9 @@ function Contato() {
       const mensagem = `
     Novo contato pelo site MREIS
 
-    Nome: ${nome}
-    Serviço: ${servico}
-    Descrição: ${descricao}
+    ${nome} 
+    Serviço de ${servico}
+    ${descricao}
   `
 
   const mensagemFormatada = encodeURIComponent(mensagem)
@@ -30,10 +30,10 @@ function Contato() {
       <h1>Contato</h1>
 
       <section className="contato-content">
-        <p>
+        <h3>
           Preencha seus dados e informe o serviço de interesse.
           Entraremos em contato com você.
-        </p>
+        </h3>
 
         <form className="contato-form"onSubmit={handleSubmit}>
           <label>

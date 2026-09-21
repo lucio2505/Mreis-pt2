@@ -27,7 +27,7 @@ function Fotografia() {
           <div className="category-image">
             <img src={btnEnsaio} alt="Ensaio Fotográfico" />
           </div>
-          <span>Ensaio Fotográfico</span>
+          <h2>Ensaio Fotográfico</h2>
         </button>
 
         <button
@@ -37,7 +37,7 @@ function Fotografia() {
           <div className="category-image">
             <img src={btnAniversario} alt="Aniversário" />
           </div>
-          <span>Aniversário</span>
+          <h2>Aniversário</h2>
         </button>
 
         <button
@@ -47,7 +47,7 @@ function Fotografia() {
           <div className="category-image">
             <img className="moda" src={btnModa} alt="Moda" />
           </div>
-          <span>Moda</span>
+          <h2>Moda</h2>
         </button>
 
         <button
@@ -57,7 +57,7 @@ function Fotografia() {
           <div className="category-image">
             <img className="gastronomico" src={btnGastronomico} alt="Gastronômico" />
           </div>
-          <span>Gastronômico</span>
+          <h2>Gastronômico</h2>
         </button>
       </div>
 

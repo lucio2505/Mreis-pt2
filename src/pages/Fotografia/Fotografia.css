@@ -89,7 +89,7 @@
   object-position: center 35%;
 }
 
-.category-button span {
+.category-button h2 {
   font-size: 20px;
 }
 
@@ -116,7 +116,7 @@
   opacity: 1;
 }
 
-.category-button.active span {
+.category-button.active h2 {
   font-weight: 600;
 }
 
@@ -135,7 +135,7 @@
     font-size: 25px;
   }
 
-  .category-button span {
+  .category-button h2 {
   font-size: 17px;
 }
 

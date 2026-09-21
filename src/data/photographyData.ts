@@ -142,8 +142,4 @@ export const photographyData = {
     {src: gastronomico15, alt: 'Fotografia gastronômica 15'},
     {src: gastronomico16, alt: 'Fotografia gastronômica 16'},
   ],
-
-  prewedding: [
-    
-  ]
 }
