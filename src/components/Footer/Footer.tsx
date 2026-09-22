@@ -1,6 +1,6 @@
 import './Footer.css'
 import {FaInstagram, FaWhatsapp} from 'react-icons/fa'
-import logo from '../../assets/logo/logo-dourada.png'
+import logo from '../../assets/logo/logo-dourada.webp'
 
 function Footer() {
   return (
