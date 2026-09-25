@@ -120,6 +120,15 @@
   font-weight: 600;
 }
 
+.examples-title{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 27px;
+  scroll-margin-top: 280px;
+}
+
 @media (max-width: 761px) {
   .fotografia-gallery {
     grid-template-columns: repeat(3, 1fr);

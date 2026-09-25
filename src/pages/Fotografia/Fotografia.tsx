@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { photographyData } from '../../data/photographyData'
 import { Link } from 'react-router-dom'
 import './Fotografia.css'
@@ -12,8 +12,17 @@ type Category = keyof typeof photographyData
 
 function Fotografia() {
   const [category, setCategory] = useState<Category>('ensaio')
-
+  const examplesRef = useRef<HTMLHeadingElement>(null)
   const photos = photographyData[category]
+
+  function handleCategoryChange(newCategory: Category) {
+  setCategory(newCategory)
+
+  examplesRef.current?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+}
 
   return (
     <main className="fotografia">
@@ -22,7 +31,7 @@ function Fotografia() {
       <div className="fotografia-categories">
         <button
           className={`category-button ${category === 'ensaio' ? 'active' : ''}`}
-          onClick={() => setCategory('ensaio')}
+          onClick={() => handleCategoryChange('ensaio')}
         >
           <div className="category-image">
             <img src={btnEnsaio} alt="Ensaio Fotográfico" />
@@ -32,7 +41,7 @@ function Fotografia() {
 
         <button
           className={`category-button ${category === 'aniversario' ? 'active' : ''}`}
-          onClick={() => setCategory('aniversario')}
+          onClick={() => handleCategoryChange('aniversario')}
         >
           <div className="category-image">
             <img src={btnAniversario} alt="Aniversário" />
@@ -42,7 +51,7 @@ function Fotografia() {
 
         <button
           className={`category-button ${category === 'moda' ? 'active' : ''}`}
-          onClick={() => setCategory('moda')}
+          onClick={() => handleCategoryChange('moda')}
         >
           <div className="category-image">
             <img className="moda" src={btnModa} alt="Moda" />
@@ -52,7 +61,7 @@ function Fotografia() {
 
         <button
           className={`category-button ${category === 'gastronomico' ? 'active' : ''}`}
-          onClick={() => setCategory('gastronomico')}
+          onClick={() => handleCategoryChange('gastronomico')}
         >
           <div className="category-image">
             <img className="gastronomico" src={btnGastronomico} alt="Gastronômico" />
@@ -60,6 +69,10 @@ function Fotografia() {
           <h2>Gastronômico</h2>
         </button>
       </div>
+
+      <h3 ref={examplesRef} className="examples-title">
+        Veja alguns exemplos:
+      </h3>
 
       <div className="fotografia-gallery" key={category}>
         {photos.map((photo) => (
