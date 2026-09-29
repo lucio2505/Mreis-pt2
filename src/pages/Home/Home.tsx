@@ -8,6 +8,7 @@ import btnFotografia from '../../assets/home-web/servicos/btnFotografia.webp'
 
 
 function Home() {
+
   return (
     <main className="home">
       <section className="home-hero">
@@ -45,6 +46,7 @@ function Home() {
     />
   </div>
 </section>
+
 
 <section className="home-gallery">
   <h2>Galeria</h2>

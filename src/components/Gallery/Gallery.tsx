@@ -11,8 +11,14 @@ import moda1 from '../../assets/home-web/galeria/moda1.webp'
 import moda2 from '../../assets/home-web/galeria/moda2.webp'
 import moda3 from '../../assets/home-web/galeria/moda3.webp'
 import moda4 from '../../assets/home-web/galeria/moda4.webp'
+import {useState}  from 'react'     
+import ImageLightBox from '../ImageLightBox/ImageLightBox'
 
 function Gallery() {
+  const [selectedImage, setSelectedImage] = useState<{
+  src: string
+  alt: string
+  } | null>(null)
   const photos = [
    {src: comida1, alt: 'Comida 1'},
     {src: comida2, alt: 'Comida 2'},
@@ -28,15 +34,40 @@ function Gallery() {
     {src: moda4, alt: 'Moda 4'}
   ]
 
+  
+
   return (
+  <>
     <div className="gallery-grid">
       {photos.map((photo) => (
         <div className="gallery-item" key={photo.src}>
-          <img src={photo.src} alt={photo.alt} />
+          <img
+            src={photo.src}
+            alt={photo.alt}
+            loading="lazy"
+            decoding="async"
+            onClick={() =>
+              setSelectedImage({
+                src: photo.src,
+                alt: photo.alt
+              })
+            }
+          />
         </div>
       ))}
     </div>
-  )
+
+    {selectedImage && (
+      <ImageLightBox
+        src={selectedImage.src}
+        alt={selectedImage.alt}
+        onClose={() => setSelectedImage(null)}
+      />
+    )}
+  </>
+)
+
+
 }
 
 export default Gallery

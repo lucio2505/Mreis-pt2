@@ -6,6 +6,7 @@ import btnAniversario from '../../assets/fotografia-web/btnAniversario.webp'
 import btnEnsaio from '../../assets/fotografia-web/btnEnsaio.webp'
 import btnGastronomico from '../../assets/fotografia-web/btnGastronomico.webp'
 import btnModa from '../../assets/fotografia-web/btnModa.webp'
+import ImageLightBox from '../../components/ImageLightBox/ImageLightBox'
 
 
 type Category = keyof typeof photographyData
@@ -23,6 +24,10 @@ function Fotografia() {
     block: 'start'
   })
 }
+const [selectedImage, setSelectedImage] = useState<{
+  src: string
+  alt: string
+} | null>(null)
 
   return (
     <main className="fotografia">
@@ -78,7 +83,13 @@ function Fotografia() {
         {photos.map((photo) => (
           <div className="fotografia-photo" key={photo.alt}>
               {photo.src ? (
-                <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
+                <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" onClick={() =>
+                  setSelectedImage({
+                    src: photo.src,
+                    alt: photo.alt
+                  })
+                }/>
+                
               ) : (
                 <div>
               {photo.alt}
@@ -87,7 +98,13 @@ function Fotografia() {
           </div>
         ))}
       </div>
-
+        {selectedImage && (
+  <ImageLightBox
+    src={selectedImage.src}
+    alt={selectedImage.alt}
+    onClose={() => setSelectedImage(null)}
+  />
+  )}
       
 
       <Link className="contact-button" to="/contato">
